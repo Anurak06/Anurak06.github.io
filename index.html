@@ -13,39 +13,80 @@
       color: #333;
       line-height: 1.6;
     }
+
     header {
       background: linear-gradient(135deg, #4a6cf7, #7b89f4);
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 50px 20px 80px 20px;
+      position: relative;
     }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      position: absolute;
+      bottom: -70px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
     section {
       max-width: 900px;
-      margin: 30px auto;
+      margin: 90px auto 30px auto;
       background: white;
       padding: 25px;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
+
     h2 {
       color: #4a6cf7;
       border-left: 5px solid #4a6cf7;
       padding-left: 10px;
     }
+
     ul { padding-left: 20px; }
     a { color: #4a6cf7; text-decoration: none; }
     a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      header { padding: 40px 10px 60px 10px; }
+      .profile-img {
+        width: 100px;
+        height: 100px;
+        bottom: -50px;
+      }
+      section {
+        margin-top: 70px;
+        padding: 20px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>🌟 Anurak Saowako</h1>
     <p>นักศึกษาด้าน AI & Web Development | สนใจ Data Science</p>
+    <!-- 🔹 ตรงนี้คือรูปโปรไฟล์ของคุณ -->
+    <img src="https://via.placeholder.com/140" alt="Profile Photo" class="profile-img">
+    <!-- 🔸 เปลี่ยนลิงก์ด้านบนเป็นลิงก์รูปจริงของคุณ เช่น:
+         https://github.com/username.png หรือ
+         ลิงก์จาก Google Drive / Imgur -->
   </header>
 
   <section>
     <h2>1. แนะนำตัว (Profile)</h2>
-    <p>สวัสดีครับ ผมชื่อ <b>อนุรักษ์ เสาวโก</b> นักศึกษาปีที่ 3 มหาวิทยาลัยตัวอย่าง  
+    <p>สวัสดีครับ ผมชื่อ <b>อนุรักษ์ เสาวโค</b>  
+    นักศึกษาชั้นปีที่ 4 มหาวิทยาลัยราชภัฏอุดรธานี  
     สนใจด้าน AI, Web Development และ Cybersecurity</p>
   </section>
 
@@ -53,8 +94,8 @@
     <h2>2. ทักษะ (Skills)</h2>
     <ul>
       <li>Programming: Python, Java, HTML/CSS, JavaScript</li>
-      <li>AI & Data: TensorFlow, scikit-learn, Power BI, SQL</li>
-      <li>Tools: Git, VS Code, Figma, Google Colab</li>
+      <li>AI & Data:  SQL</li>
+      <li>Tools: Git, VS Code</li>
     </ul>
   </section>
 
@@ -69,7 +110,7 @@
 
   <section>
     <h2>4. การศึกษา (Education)</h2>
-    <p>คณะวิทยาสาสตร์ สาขาวิทยาการคอมพิวเตอร์<br>
+    <p>คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์<br>
        มหาวิทยาลัยราชภัฏอุดรธานี (2565–ปัจจุบัน)</p>
   </section>
 
